@@ -1,28 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("templates.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const searchInput = document.getElementById("searchInput");
-      const templateList = document.getElementById("templateList");
 
-      function renderTemplates(templates) {
-        templateList.innerHTML = "";
-        templates.forEach((template) => {
-          const li = document.createElement("li");
-          li.innerHTML = `<strong>${template.title}</strong><p>${template.content}</p>`;
-          templateList.appendChild(li);
-        });
-      }
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("template-form");
+  const output = document.getElementById("json-output");
 
-      searchInput.addEventListener("input", () => {
-        const keyword = searchInput.value.toLowerCase();
-        const filtered = data.templates.filter((t) =>
-          t.title.toLowerCase().includes(keyword) ||
-          t.content.toLowerCase().includes(keyword)
-        );
-        renderTemplates(filtered);
-      });
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const title = document.getElementById("title").value.trim();
+    const category = document.getElementById("category").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-      renderTemplates(data.templates);
-    });
+    if (title && category && message) {
+      const jsonSnippet = {
+        title: title,
+        category: category,
+        message: message
+      };
+      output.textContent = JSON.stringify(jsonSnippet, null, 2);
+      form.reset();
+    }
+  });
 });
