@@ -1,5 +1,12 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (fetch("templates.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then(data => console.log("Templates loaded:", data))
+  .catch(err => console.error("Error loading templates.json:", err));
+) => {
   const templatesContainer = document.getElementById("templates-container");
   const form = document.getElementById("template-form");
   const output = document.getElementById("json-output");
