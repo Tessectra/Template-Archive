@@ -1,16 +1,17 @@
-{
-  "templates": [
-    {
-      "title": "Welcome Email",
-      "content": "Hi there! Welcome to the team. Let us know if you have any questions."
-    },
-    {
-      "title": "Follow-up",
-      "content": "Just checking in to see if you need anything else from us."
-    },
-    {
-      "title": "Promo Offer",
-      "content": "We’re excited to offer you 20% off this week only!"
-    }
-  ]
-}
+[
+  {
+    "title": "Welcome Email",
+    "keywords": ["welcome", "onboarding", "intro"],
+    "content": "Hi [Name], welcome to the team! Let us know if you have any questions."
+  },
+  {
+    "title": "Follow-Up Email",
+    "keywords": ["follow up", "reminder", "check-in"],
+    "content": "Hi [Name], just checking in to see if you had a chance to review our last message."
+  },
+  {
+    "title": "Promotion Email",
+    "keywords": ["promo", "discount", "special offer"],
+    "content": "Get 20% off your next order! Use code SAVE20 at checkout."
+  }
+]
