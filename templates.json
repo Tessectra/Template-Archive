@@ -4,22 +4,5 @@
     "keywords": ["Changing", "credit card", "existing reservation"],
     "content": "Hi [Name], welcome to the team! Let us know if you have any questions."
   },
-  {
-    "title": "Follow-Up Email",
-    "keywords": ["follow up", "reminder", "check-in"],
-    "content": "Hey there!
 
-Thanks for reaching out and I apologize for the delayed response. I understand that your time is valuable, and I want to assure you that we take your concerns seriously and are working hard to address them.
-
-I apologize for any inconvenience caused by using an incorrect card for your reservation. While our team is here to assist with various inquiries, it's important to note that modifying the payment method after a reservation has concluded is a task beyond our current capabilities. For future reference, I recommend canceling the existing reservation and promptly rebooking with the correct payment method to ensure a smooth transaction. If you have any further questions or require assistance with a different matter, please don't hesitate to contact us, and we will do our best to assist you.
-
-I'm genuinely sorry for the inconvenience and if there is anything else that I can do for you, big or small, please let me know and I'll do my very best to help you.
-
-Sincerely, "
-  },
-  {
-    "title": "Promotion Email",
-    "keywords": ["promo", "discount", "special offer"],
-    "content": "Get 20% off your next order! Use code SAVE20 at checkout."
-  }
 ]
