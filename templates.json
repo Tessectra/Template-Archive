@@ -1,0 +1,16 @@
+{
+  "templates": [
+    {
+      "title": "Welcome Email",
+      "content": "Hi there! Welcome to the team. Let us know if you have any questions."
+    },
+    {
+      "title": "Follow-up",
+      "content": "Just checking in to see if you need anything else from us."
+    },
+    {
+      "title": "Promo Offer",
+      "content": "We’re excited to offer you 20% off this week only!"
+    }
+  ]
+}
